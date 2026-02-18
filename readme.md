@@ -1,0 +1,82 @@
+# Curso de Visão Computacional
+
+Curso de Visão Computacional ministrado no Departamento de Computação UFSCar. 
+
+O curso é dividio em módulos (M01, M02, ...). Cada módulo possui notebooks Jupyter numerados apresentando conceitos sobre Visão Computacional. Também são disponibilizadas [notas de aula](<Notas de Aula.pdf>) sobre os conceitos teóricos.
+
+## Principais tópicos abordados
+
+1. Visão geral sobre modelagem probabilística e cálculo diferencial;
+2. Regressão linear e logística;
+3. Diferenciação automática
+4. Redes neurais convolucionais;
+5. Estabilização e regularização de redes modernas;
+6. Classificação de imagens naturais;
+7. Segmentação de imagens naturais;
+8. Autoencoders para remoção de ruído;
+9. Mecanismos de atenção (transformers);
+10. Modelos de visão e linguagem (VLMs);
+11. Geração de imagens artificiais
+12. Detecção e casamento de pontos salientes
+
+## Bibliografia
+
+* Understanding Deep Learning, Simon J. D. Prince
+https://udlbook.github.io/udlbook. Principal referência do curso. Possui excelentes figuras para explicar os conceitos;
+
+* Dive into Deep Learning, Aston Zhang A. et al. https://d2l.ai. Foca na parte prática de redes neurais, com implementação de todos os conceitos discutidos;
+
+* Deep Learning: Foundations and concepts, Chris Bishop e Hugh Bishop. https://www.bishopbook.com. Referência para a parte teórica sobre redes neurais;
+
+* Computer Vision: Algorithms and Applications, Richard Szeliski. https://szeliski.org/Book. De longe a principal referência sobre todas as subáreas de Visão Computacional.
+
+### Outras referências interessantes
+
+* Aulas gravadas quando este curso foi ministrado em 2024. Infelizmente as gravações começaram a partir do módulo 4 (CNNs): https://www.youtube.com/playlist?list=PLV6nBLHbx0ri7Gh_szfwu3HGWCmIui4UM
+
+* Curso do Justin Johnson da Universidade de Michigan: https://web.eecs.umich.edu/~justincj/teaching/eecs498/WI2022/schedule.html
+
+* Curso de Stanford: http://cs231n.stanford.edu/schedule.html
+
+* Dicas importantes sobre treinamento de redes neurais - Andrej Karpathy: https://karpathy.github.io/2019/04/25/recipe/
+
+## Materiais sobre Python e processamento de imagens
+
+Revisão sobre conceitos Python e numpy necessários para redes neurais: https://cs231n.github.io/python-numpy-tutorial/
+
+Livro referência para processamento digital de imagens: [Processamento Digital de Imagens, R. Gonzalez e R. Woods](https://www.amazon.com.br/Processamento-digital-imagens-Rafael-Gonzalez/dp/8576054019)
+
+Playlist de disicplina PDI ministrada durante a pandemia em 2021: https://youtube.com/playlist?list=PLV6nBLHbx0riEUDgJrAogzpAt3qQquKVR
+
+Slides e códigos de disciplina PDI ministrada em 2022: [https://www.dropbox.com/scl/fo/3hahb07p2ncfzhus0tpq9](https://www.dropbox.com/scl/fo/3hahb07p2ncfzhus0tpq9/AM_1eZxgn74NWp8OAFjiA6A?rlkey=xvyhhzjht6dzskmo6q5m22j8p&dl=0)
+
+## Configuração do ambiente
+
+Baixar e instalar o gerenciador de ambientes miniconda neste link:
+
+https://www.anaconda.com/docs/getting-started/miniconda/install
+
+No terminal, executar os seguintes comandos:
+
+```bash
+# Criação do ambiente chamado cursovc
+conda create -n cursovc
+conda activate cursovc
+conda config --env --add channels conda-forge
+conda config --env --set channel_priority strict
+# Se possuir GPU:
+conda install python pytorch-gpu torchvision matplotlib notebook numpy scipy transformers diffusers accelerate python-graphviz ipympl scikit-learn timm plotly
+# Se não possuir GPU:
+conda install python pytorch torchvision matplotlib notebook numpy scipy transformers diffusers accelerate python-graphviz ipympl scikit-learn timm plotly
+```
+
+Antes de instalar as bibliotecas, o conda mostra as versões que serão instaladas. Verifique se são versões recentes das bibliotecas. As bibliotecas python-graphviz, ipympl, scikit-learn, timm e plotly são opcionais e serão usadas apenas uma única vez em exemplos específicos. Você pode usar os arquivos requirements.txt ou requirements.yml para criar o ambiente. 
+
+## GPUs online grátis
+
+A grande maioria dos códigos da disciplina foi planejada para não necessitar de GPUs. Os notebooks que precisam de GPU estão marcados com (GPU) no nome. Os códigos foram testados em um processador Intel Core i5-3230M 2.60GHz com 2 cores e 4 threads e 8 GB de RAM, ou seja, um computador básico. Para os códigos que precisam de GPU, segue abaixo uma lista de serviços em nuvem que possibilitam execução na GPU de graça. 
+
+* https://colab.research.google.com/
+* https://studiolab.sagemaker.aws/
+* https://lightning.ai/
+* https://www.kaggle.com/code/

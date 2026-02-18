@@ -1,0 +1,15 @@
+python==3.13
+pytorch
+torchvision
+matplotlib
+notebook
+numpy
+scipy
+transformers
+diffusers
+accelerate
+python-graphviz
+ipympl
+scikit-learn
+timm
+plotly

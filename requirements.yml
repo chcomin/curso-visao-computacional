@@ -1,0 +1,21 @@
+name: cursovc
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - accelerate
+  - cuda-version
+  - diffusers
+  - ipympl
+  - matplotlib
+  - notebook
+  - numpy
+  - plotly
+  - python-graphviz
+  - pytorch-gpu
+  - scikit-learn
+  - scipy
+  - timm
+  - torchvision
+  - transformers
