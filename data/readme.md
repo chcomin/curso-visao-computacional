@@ -13,6 +13,10 @@ O seguinte arquivo (1.6 GiB) possui os datasets MNIST, FashionMNIST e oxford_pet
 
 https://www.dropbox.com/scl/fi/v6mouq1k553tqbl734l8i/data.zip?rlkey=i1u3xjmvjgoh38yhq1fo1w5dv&dl=1
 
+O seguinte arquivo (324 MiB) possui o dataset aquarium:
+
+https://www.dropbox.com/scl/fi/jmft5gb3fwbqx1q7tj8jp/aquarium.zip?rlkey=qpx93s4eu28s48yyfp5bndgbr&dl=1
+
 O seguinte diretório (2 GiB) do Dropbox possui os checkpoints dos modelos:
 
 https://www.dropbox.com/scl/fo/v80zspji2t8bl6p66r0ln/AMAtfXlkJGWhWp-MtGK6zfc?rlkey=bpkem8i37jsqx2tjiwbtju2t5&dl=0
